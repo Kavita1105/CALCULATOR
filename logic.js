@@ -11,6 +11,11 @@ button.addEventListener('click',(e)=>{
         string="";
        document.querySelector('input').value=string; 
     }
+
+    else if( e.target.innerHTML=='x<sup>2</sup>'){
+        string=string*string;
+        document.querySelector('input').value=string;
+    }
    
     else if(e.target.innerHTML=='DE'){
       string= string.slice(0,-1);
